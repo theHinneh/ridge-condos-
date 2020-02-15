@@ -1,0 +1,21 @@
+/** @format */
+.contact-section {
+  background-color: white;
+  padding: 7rem 0;
+  color: grey;
+  .contact-info p {
+    font-family: 'Playfair Display', times, serif;
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+  .contact-info p .d-block {
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-family: 'Roboto', arial, sans-serif;
+    text-transform: uppercase;
+  }
+}
+textarea {
+  border: 1px solid grey;
+}

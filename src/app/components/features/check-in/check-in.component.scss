@@ -18,3 +18,10 @@
   appearance: none;
   width: 100%;
 }
+@media (max-width: 575px) {
+  .check-in {
+    margin-top: 0;
+    position: relative;
+    width: 100%;
+  }
+}

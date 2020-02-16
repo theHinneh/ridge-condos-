@@ -84,72 +84,28 @@
             </div>
 
             <div class="row date-picker">
-              <div class="form-group hidden">
+              <div class="form-group date-picker-input">
                 <div class="input-group">
                   <input
-                    name="datepicker"
-                    class="form-control"
                     ngbDatepicker
-                    #datepicker="ngbDatepicker"
-                    [autoClose]="'outside'"
-                    (dateSelect)="onDateSelection($event)"
-                    [displayMonths]="2"
-                    [dayTemplate]="t"
-                    outsideDays="hidden"
-                    [startDate]="fromDate"
+                    #in="ngbDatepicker"
+                    placeholder="Date In"
+                    type="text"
+                    class="form-control"
+                    (click)="in.toggle()"
                   />
-                  <ng-template #t let-date let-focused="focused">
-                    <span
-                      class="custom-day"
-                      [class.focused]="focused"
-                      [class.range]="isRange(date)"
-                      [class.faded]="isHovered(date) || isInside(date)"
-                      (mouseenter)="hoveredDate = date"
-                      (mouseleave)="hoveredDate = null"
-                    >
-                      {{ date.day }}
-                    </span>
-                  </ng-template>
                 </div>
               </div>
               <div class="form-group date-picker-input">
                 <div class="input-group">
                   <input
-                    #dpFromDate
+                    ngbDatepicker
+                    #out="ngbDatepicker"
+                    placeholder="Date Out"
+                    type="text"
                     class="form-control"
-                    placeholder="yyyy-mm-dd"
-                    name="dpFromDate"
-                    (click)="datepicker.toggle()"
-                    [value]="formatter.format(fromDate)"
-                    (input)="
-                      fromDate = validateInput(fromDate, dpFromDate.value)
-                    "
+                    (click)="out.toggle()"
                   />
-                  <div class="input-group-append">
-                    <fa-icon
-                      [icon]="faCalendar"
-                      (click)="datepicker.toggle()"
-                    ></fa-icon>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group date-picker-input">
-                <div class="input-group">
-                  <input
-                    #dpToDate
-                    class="form-control"
-                    placeholder="yyyy-mm-dd"
-                    name="dpToDate"
-                    [value]="formatter.format(toDate)"
-                    (click)="datepicker.toggle()"
-                    (input)="toDate = validateInput(toDate, dpToDate.value)"
-                  />
-                  <div class="input-group-append">
-                    <fa-icon
-                      [icon]="faCalendar"
-                      (click)="datepicker.toggle()"
-                    ></fa-icon>
-                  </div>
                 </div>
               </div>
             </div>

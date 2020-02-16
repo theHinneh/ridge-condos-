@@ -11,14 +11,9 @@ import { JwtHelperService, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { ModalModule } from '../features/modal/modal.module';
 import { BookingComponent } from './booking/booking.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { EmployeesComponent } from './employees/employees.component';
-import { ErrorComponent } from './error/error.component';
-import { EventsComponent } from './events/events.component';
-import { IssuesComponent } from './issues/issues.component';
 import { LoginComponent } from './login/login.component';
 import { LogoutComponent } from './logout/logout.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { RepairComponent } from './repair/repair/repair.component';
 import { AdminRoomsComponent } from './rooms/rooms/rooms.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
 
@@ -26,15 +21,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
   declarations: [
     SidenavComponent,
     NavbarComponent,
-    IssuesComponent,
     DashboardComponent,
     LoginComponent,
     LogoutComponent,
-    ErrorComponent,
     AdminRoomsComponent,
-    RepairComponent,
-    EmployeesComponent,
-    EventsComponent,
     BookingComponent
   ],
   imports: [
@@ -50,15 +40,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
   exports: [
     SidenavComponent,
     NavbarComponent,
-    IssuesComponent,
     DashboardComponent,
     LoginComponent,
     LogoutComponent,
-    ErrorComponent,
     AdminRoomsComponent,
-    RepairComponent,
-    EmployeesComponent,
-    EventsComponent,
     BookingComponent
   ],
   providers: [JwtHelperService, { provide: JWT_OPTIONS, useValue: JWT_OPTIONS }]

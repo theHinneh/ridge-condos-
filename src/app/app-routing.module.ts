@@ -4,12 +4,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BookingComponent } from './components/admin/booking/booking.component';
 import { DashboardComponent } from './components/admin/dashboard/dashboard.component';
-import { EmployeesComponent } from './components/admin/employees/employees.component';
-import { EventsComponent } from './components/admin/events/events.component';
-import { IssuesComponent } from './components/admin/issues/issues.component';
 import { LoginComponent } from './components/admin/login/login.component';
 import { LogoutComponent } from './components/admin/logout/logout.component';
-import { RepairComponent } from './components/admin/repair/repair/repair.component';
 import { AdminRoomsComponent } from './components/admin/rooms/rooms/rooms.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
@@ -30,26 +26,6 @@ const routes: Routes = [
   {
     path: 'admin/booking',
     component: BookingComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'admin/events',
-    component: EventsComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'admin/employees',
-    component: EmployeesComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'admin/repair',
-    component: RepairComponent,
-    canActivate: [AuthGuard]
-  },
-  {
-    path: 'admin/issues',
-    component: IssuesComponent,
     canActivate: [AuthGuard]
   },
   {

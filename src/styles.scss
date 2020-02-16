@@ -66,7 +66,7 @@ body {
   .ul-decoration li a:hover {
     color: #fff;
   }
-  margin: 15vh 0 0 0;
+  margin: 25vh 0 0 0;
 }
 button:focus {
   outline: none !important;
@@ -79,7 +79,6 @@ label {
   font-size: 20px !important;
   font-weight: 900;
 }
-.navbar-toggleable-md .navbar-collapse {
-  -webkit-justify-content: flex-end;
-  justify-content: flex-end;
+@media (max-width:575px) {
+  .navbar-header {width:100%;}
 }

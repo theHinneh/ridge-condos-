@@ -66,6 +66,7 @@ body {
   .ul-decoration li a:hover {
     color: #fff;
   }
+  margin: 15vh 0 0 0;
 }
 button:focus {
   outline: none !important;
@@ -77,4 +78,8 @@ button:focus {
 label {
   font-size: 20px !important;
   font-weight: 900;
+}
+.navbar-toggleable-md .navbar-collapse {
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
 }

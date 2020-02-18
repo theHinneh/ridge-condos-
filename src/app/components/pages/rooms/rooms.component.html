@@ -28,113 +28,85 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="room">
-            <figure class="img-wrap">
-              <img
-                src="./assets/images/single.jpeg"
-                alt=""
-                class="img-fluid mb-3"
-              />
-            </figure>
-            <div class="p-3 text-center room-info">
-              <h2>Single Room</h2>
-              <span class="text-uppercase letter-spacing-1"
-                >GHS 200 / Week</span
-              >
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/images/single.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h2 class="card-title">Standard Room</h2>
+              <p class="card-text text-uppercase letter-spacing-1 span-color">
+                GHS 400
+              </p>
             </div>
           </div>
         </div>
-        <!-- single room -->
+        <!-- standard room -->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="room">
-            <figure class="img-wrap">
-              <img
-                src="./assets/images/family.jpeg"
-                alt=""
-                class="img-fluid mb-3"
-              />
-            </figure>
-            <div class="p-3 text-center room-info">
-              <h2>Family Room</h2>
-              <span class="text-uppercase letter-spacing-1"
-                >GHS 400 / Week</span
-              >
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/images/family.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h2 class="card-title">1 Bedroom Studio</h2>
+              <p class="card-text text-uppercase letter-spacing-1 span-color">
+                GHS 500
+              </p>
             </div>
           </div>
         </div>
-        <!-- family room -->
+        <!-- 1 bedroom studio -->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="room">
-            <figure class="img-wrap">
-              <img
-                src="./assets/images/presidential.jpeg"
-                alt=""
-                class="img-fluid mb-3"
-              />
-            </figure>
-            <div class="p-3 text-center room-info">
-              <h2>Presidential Room</h2>
-              <span class="text-uppercase letter-spacing-1"
-                >GHS 200 / Week</span
-              >
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/images/family.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h2 class="card-title">1 Bedroom Duplex</h2>
+              <p class="card-text text-uppercase letter-spacing-1 span-color">
+                GHS 600
+              </p>
             </div>
           </div>
         </div>
-        <!-- precidential room -->
+        <!-- 1 Bedroom Duplex -->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="room">
-            <figure class="img-wrap">
-              <img
-                src="./assets/images/single.jpeg"
-                alt=""
-                class="img-fluid mb-3"
-              />
-            </figure>
-            <div class="p-3 text-center room-info">
-              <h2>Single Room</h2>
-              <span class="text-uppercase letter-spacing-1"
-                >GHS 200 / Week</span
-              >
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/images/single.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h2 class="card-title">2 Bedroom</h2>
+              <p class="card-text text-uppercase letter-spacing-1 span-color">
+                GHS 1000
+              </p>
             </div>
           </div>
         </div>
-        <!-- single room -->
+        <!-- 2 Bedroom -->
         <div class="col-md-6 col-lg-4 mb-5">
-          <div class="room">
-            <figure class="img-wrap">
-              <img
-                src="./assets/images/family.jpeg"
-                alt=""
-                class="img-fluid mb-3"
-              />
-            </figure>
-            <div class="p-3 text-center room-info">
-              <h2>Family Room</h2>
-              <span class="text-uppercase letter-spacing-1"
-                >GHS 400 / Week</span
-              >
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="./assets/images/family.jpeg"
+              alt="Card image cap"
+            />
+            <div class="card-body">
+              <h2 class="card-title">3 Bedroom</h2>
+              <p class="card-text text-uppercase letter-spacing-1 span-color">
+                GHS 1400
+              </p>
             </div>
           </div>
         </div>
-        <!-- family room -->
-        <div class="col-md-6 col-lg-4 mb-5">
-          <div class="room">
-            <figure class="img-wrap">
-              <img
-                src="./assets/images/presidential.jpeg"
-                alt=""
-                class="img-fluid mb-3"
-              />
-            </figure>
-            <div class="p-3 text-center room-info">
-              <h2>Presidential Room</h2>
-              <span class="text-uppercase letter-spacing-1"
-                >GHS 200 / Week</span
-              >
-            </div>
-          </div>
-        </div>
-        <!-- precidential room -->
+        <!-- 3 Bedroom -->
       </div>
     </div>
   </section>
@@ -170,7 +142,9 @@
             incidunt modi earum eligendi quas!
           </p>
           <p>
-            <a [routerLink]="['/routePath']" class="btn btn-primary text-white"
+            <a
+              [routerLink]="['/reservation']"
+              class="btn btn-primary text-white"
               >Book Now</a
             >
           </p>
@@ -200,7 +174,9 @@
             omnis quod corporis consequuntur obcaecati?
           </p>
           <p>
-            <a [routerLink]="['/routePath']" class="btn btn-primary text-white"
+            <a
+              [routerLink]="['/reservation']"
+              class="btn btn-primary text-white"
               >Book Now</a
             >
           </p>

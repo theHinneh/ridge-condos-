@@ -28,6 +28,7 @@ import { ReservationComponent } from './components/reservation/reservation.compo
 import { AuthGuardService } from './components/services/auth-guard.service';
 import { AuthService } from './components/services/auth.service';
 import { SliderComponent } from './components/slider/slider.component';
+import { RoomsCorouselComponent } from './components/features/rooms-corousel/rooms-corousel.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +46,8 @@ import { SliderComponent } from './components/slider/slider.component';
     RoomsComponent,
     ContactComponent,
     TheFacilitiesComponent,
-    ReservationFormComponent
+    ReservationFormComponent,
+    RoomsCorouselComponent
   ],
   imports: [
     AppRoutingModule,

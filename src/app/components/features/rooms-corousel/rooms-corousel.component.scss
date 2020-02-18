@@ -1,0 +1,36 @@
+/** @format */
+
+.rooms-and-suites {
+  padding: 5em 0;
+  background-color: white;
+
+  .span-color {
+    color: orange;
+  }
+
+  .heading {
+    font-family: 'Playfair Display', times, serif;
+    font-weight: bold;
+  }
+}
+
+.horizontal-scroll-wrapper {
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+
+  .card {
+    flex: 0 0 auto;
+    img {
+      width: 20rem;
+    }
+    padding: 2rem;
+    margin: .5rem;
+  }
+}

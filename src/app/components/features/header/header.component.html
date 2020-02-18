@@ -1,7 +1,26 @@
 <!-- @format -->
-
+<div class="contact-detail">
+  <div class="location" style="padding-bottom: 10px;">Ahodwo, Kumasi</div>
+  <div class="media row" style="justify-content: center;">
+    <div style="display: inline-flex;">
+      <span
+        ><fa-icon [icon]="faPhone" style=" vertical-align: middle;"></fa-icon
+      ></span>
+      &nbsp;
+      <span><p>(+233) 50 106 9673</p></span>
+    </div>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <div style="display: inline-flex; justify-content: center;">
+      <span
+        ><fa-icon [icon]="faInbox" style=" vertical-align: middle;"></fa-icon
+      ></span>
+      &nbsp;
+      <span><p>reserve@ridgecondos.com.gh</p></span>
+    </div>
+  </div>
+</div>
 <nav
-  class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+  class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
   id="mainNav"
 >
   <!-- <div class="container"> -->
@@ -10,7 +29,7 @@
     [routerLink]="['']"
     routerLinkActive="router-link-active"
   >
-    <img src="./assets/images/logo.jpeg" alt="" height="100" width="150" />
+    <img src="./assets/images/logo.jpeg" alt="" height="70" width="150" />
   </a>
   <button
     class="navbar-toggler"
@@ -25,24 +44,14 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarResponsive">
     <ul class="navbar-nav ml-auto">
-      <li class="nav-item">
-        <a
-          class="nav-link"
-          [routerLink]="['/']"
-          routerLinkActive="router-link-active"
-          [routerLinkActiveOptions]="{ exact: true }"
-          routerLi
-          >Home</a
-        >
-      </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a
           class="nav-link"
           [routerLink]="['/about']"
           routerLinkActive="router-link-active"
           >About Us</a
         >
-      </li>
+      </li> -->
       <li class="nav-item">
         <a
           class="nav-link"
@@ -52,41 +61,31 @@
         >
       </li>
       <li class="nav-item">
-        <a
-          class="nav-link"
-          [routerLink]="['/facilities']"
-          routerLinkActive="router-link-active"
-          >Facilities</a
-        >
+        <a class="nav-link" routerLinkActive="router-link-active">Dinning</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="router-link-active">Leisure</a>
       </li>
       <li class="nav-item">
         <a
           class="nav-link"
-          [routerLink]="['/reservation']"
+          [routerLink]="['/facilities']"
           routerLinkActive="router-link-active"
-          >Reservation</a
+          >Conference & Events</a
         >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLinkActive="router-link-active">Offers</a>
       </li>
       <li class="nav-item">
         <a
           class="nav-link"
           [routerLink]="['/contact']"
           routerLinkActive="router-link-active"
-          >Contact</a
+          >Contact Us</a
         >
       </li>
     </ul>
-
-    <div class="navbar-nav ml-auto contact-details">
-      <div class="nav-item">
-        <fa-icon [icon]="faPhone" [styles]="{ color: 'orange' }"></fa-icon>
-        (+233) 502 3533
-      </div>
-      <div class="nav-item second">
-        <fa-icon [icon]="faInbox" [styles]="{ color: 'orange' }"></fa-icon>
-        reserve@ridgecondos.com.gh
-      </div>
-    </div>
   </div>
   <!-- </div> -->
 </nav>

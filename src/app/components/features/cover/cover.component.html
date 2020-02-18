@@ -1,8 +1,6 @@
 <!-- @format -->
+<!-- <app-header style="position: absolute; top: 0;"></app-header> -->
 
-<div class="container">
-  <section class="landing overlay" [style.background-image]="backGround">
-    <app-header style="position: absolute; top: 0;"></app-header>
-    <ng-content></ng-content>
-  </section>
-</div>
+<section class="landing overlay" [style.background-image]="backGround">
+  <ng-content></ng-content>
+</section>

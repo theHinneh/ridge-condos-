@@ -1,7 +1,10 @@
 /** @format */
-
+nav {
+  max-width: 100vw !important;
+}
 .navbar-brand {
   font-size: 2rem !important;
+  padding-left: 10rem;
 }
 
 .router-link-active.router-link-active.router-link-active {
@@ -9,14 +12,6 @@
 }
 .navbar .collapse .navbar-nav .nav-item .nav-link {
   font-size: 20px !important;
-}
-.contact-details {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
 }
 
 // .navbar-brand {
@@ -26,3 +21,55 @@
 //     position: fixed;
 //   }
 // }
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .navbar-brand {
+    padding-left: 0;
+  }
+}
+@media only screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .navbar-brand {
+    padding-left: 0;
+  }
+}
+.contact-detail {
+  background-color: black;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .contact-detail {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+@media only screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+  .contact-detail {
+    background-color: black;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}
+fa-icon {
+  color: orange;
+}

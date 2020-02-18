@@ -5,7 +5,7 @@ body {
   padding: 0;
   background-color: #e9ecef !important;
   // font-family: serif !important;
-  font-family: 'Playfair Display', times, serif !important;
+  font-family: 'Roboto' !important;
 }
 .cover-content {
   color: white;
@@ -79,6 +79,11 @@ label {
   font-size: 20px !important;
   font-weight: 900;
 }
-@media (max-width:575px) {
-  .navbar-header {width:100%;}
+@media (max-width: 575px) {
+  .navbar-header {
+    width: 100%;
+  }
+}
+.carousel-item {
+  background-color: white !important;
 }

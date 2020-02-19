@@ -1,0 +1,100 @@
+<!-- @format -->
+
+<div class="offers-container bg-light">
+  <app-cover [backGround]="backGround">
+    <div class="container cover-content">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-10 text-center">
+          <h1 class="heading mb-4">Offers</h1>
+          <ul class="ul-decoration mb-4">
+            <li>
+              <a
+                [routerLink]="['/welcome']"
+                routerLinkActive="router-link-active"
+                >HOME</a
+              >
+            </li>
+            <li>&#8226;</li>
+            <li>OFFERS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </app-cover>
+  <div class="app-check-in">
+    <app-check-in></app-check-in>
+  </div>
+  <section class="section offer-section bg-light">
+    <div class="container">
+      <div class="row justify-content-center text-center mb-5">
+        <div class="col-md-7">
+          <h2 class="heading">Great Offers</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda,
+            fugit? Consectetur recusandae iste fugit neque ducimus obcaecati
+            asperiores sit in quo, itaque aut nemo ullam at excepturi, soluta
+            animi doloremque?
+          </p>
+        </div>
+      </div>
+      <!-- heading -->
+      <div class="site-block-half d-block d-lg-flex bg-white">
+        <div
+          class="image d-block bg-image-2"
+          style="background-image: url(./assets/images/family.jpeg);"
+        ></div>
+        <div class="text">
+          <span class="d-block mb-4"
+            ><span class="display-4 text-primary">GHS 200</span>
+            <span class="text-uppercase letter-spacing-2">/ per week</span>
+          </span>
+          <h2 class="mb-4">Family Room</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+            voluptates perferendis velit aperiam sequi fuga ipsa quidem
+            asperiores omnis nobis? Distinctio debitis alias, laboriosam rem
+            incidunt modi earum eligendi quas!
+          </p>
+          <p>
+            <a
+              [routerLink]="['/reservation']"
+              class="btn btn-primary text-white"
+              >Book Now</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- first -->
+      <div class="site-block-half d-block d-lg-flex bg-white">
+        <div
+          href="#"
+          class="image d-block bg-image-2 order-2"
+          style="background-image: url('./assets/images/presidential.jpeg');"
+        ></div>
+        <div class="text order-1">
+          <span class="d-block mb-4"
+            ><span class="display-4 text-primary">GHS 400</span>
+            <span class="text-uppercase letter-spacing-2">/ per week</span>
+          </span>
+          <h2 class="mb-4">Presidential Room</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+            inventore molestiae, aperiam excepturi culpa eos eveniet expedita,
+            voluptatum hic accusantium dolore numquam, laudantium nulla facere
+            omnis quod corporis consequuntur obcaecati?
+          </p>
+          <p>
+            <a
+              [routerLink]="['/reservation']"
+              class="btn btn-primary text-white"
+              >Book Now</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- second -->
+    </div>
+  </section>
+  <app-reservation></app-reservation>
+  <app-footer></app-footer>
+</div>

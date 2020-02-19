@@ -29,6 +29,7 @@ import { AuthGuardService } from './components/services/auth-guard.service';
 import { AuthService } from './components/services/auth.service';
 import { SliderComponent } from './components/slider/slider.component';
 import { RoomsCorouselComponent } from './components/features/rooms-corousel/rooms-corousel.component';
+import { OffersComponent } from './components/pages/offers/offers.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { RoomsCorouselComponent } from './components/features/rooms-corousel/roo
     ContactComponent,
     TheFacilitiesComponent,
     ReservationFormComponent,
-    RoomsCorouselComponent
+    RoomsCorouselComponent,
+    OffersComponent
   ],
   imports: [
     AppRoutingModule,

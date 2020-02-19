@@ -8,8 +8,8 @@ import { LoginComponent } from './components/admin/login/login.component';
 import { LogoutComponent } from './components/admin/logout/logout.component';
 import { AdminRoomsComponent } from './components/admin/rooms/rooms/rooms.component';
 import { HomeComponent } from './components/home/home.component';
-import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { OffersComponent } from './components/pages/offers/offers.component';
 import { ReservationFormComponent } from './components/pages/reservation-form/reservation-form.component';
 import { RoomsComponent } from './components/pages/rooms/rooms.component';
 import { TheFacilitiesComponent } from './components/pages/the-facilities/the-facilities.component';
@@ -18,7 +18,7 @@ import { AuthService } from './components/services/auth.service';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutUsComponent },
+  { path: 'offers', component: OffersComponent },
   { path: 'rooms', component: RoomsComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'facilities', component: TheFacilitiesComponent },

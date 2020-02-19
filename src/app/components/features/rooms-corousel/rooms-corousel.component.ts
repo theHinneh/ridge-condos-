@@ -1,4 +1,7 @@
+/** @format */
+
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-rooms-corousel',
@@ -6,10 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rooms-corousel.component.scss']
 })
 export class RoomsCorouselComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    AOS.init();
   }
-
 }

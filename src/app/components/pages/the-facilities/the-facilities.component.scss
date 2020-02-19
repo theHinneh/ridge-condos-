@@ -39,5 +39,47 @@
 .modalLaunch {
   color: white;
   background-color: grey;
-  padding: .5rem;
+  padding: 0.5rem;
+}
+.image-and-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 5rem 0;
+  border: 1px solid grey;
+  border-bottom: none;
+  img {
+    width: 40rem;
+    height: 35rem;
+  }
+}
+.text-and-image {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-flow: row-reverse wrap;
+  padding: 5rem 0;
+  border: 1px solid grey;
+  border-top: none;
+  img {
+    width: 40rem;
+    height: 35rem;
+  }
+}
+
+.description {
+  padding: 5rem 0;
+  h3 {
+    font-weight: 900;
+  }
+  .col {
+    font-size: 1rem;
+    font-weight: 300;
+  }
 }

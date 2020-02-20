@@ -30,6 +30,7 @@ import { AuthService } from './components/services/auth.service';
 import { SliderComponent } from './components/slider/slider.component';
 import { RoomsCorouselComponent } from './components/features/rooms-corousel/rooms-corousel.component';
 import { OffersComponent } from './components/pages/offers/offers.component';
+import { LeisureComponent } from './components/pages/leisure/leisure.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { OffersComponent } from './components/pages/offers/offers.component';
     TheFacilitiesComponent,
     ReservationFormComponent,
     RoomsCorouselComponent,
-    OffersComponent
+    OffersComponent,
+    LeisureComponent
   ],
   imports: [
     AppRoutingModule,

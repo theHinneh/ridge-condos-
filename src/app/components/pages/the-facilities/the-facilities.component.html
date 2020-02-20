@@ -21,20 +21,20 @@
       </div>
     </div>
   </app-cover>
-  <section class="section" style="padding: 5rem 0; background-color: white;">
+  <section class="section" style="padding: 5em 0; background-color: white;">
     <div class="container">
       <div class="row jestify-content-start mb-5">
         <div class="col-md-7">
           <h1>Conference and Events</h1>
         </div>
-        <p style="padding: 1rem;">
+        <p style="padding: 1em;">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet,
           doloremque cum velit voluptas totam deserunt esse animi neque
           aspernatur recusandae. Deserunt hic vitae quidem officiis iure! Est ad
           vero rem.
         </p>
         <button
-          style="margin: 0 0 0 1rem;"
+          style="margin: 0 0 0 1em;"
           class="btn btn-primary"
           [routerLink]="['/reservation']"
         >
@@ -46,12 +46,14 @@
   <section class="section" style="background-color: white;">
     <div class="container">
       <!-- <div class="card"> -->
-      <div class="row image-and-text">
-        <div class="col">
-          <img src="./assets/images/conference.jpeg" alt="" />
-        </div>
-        <div class="col">
-          <h4>Main Conference</h4>
+      <!-- <div class="row justify-content-center text-center mb-5"> -->
+      <div class="site-block-half d-block d-lg-flex image-and-text">
+        <div
+          class="image d-block bg-image-2"
+          style="background-image: url(./assets/images/conference.jpeg);"
+        ></div>
+        <div class="text">
+          <h4 class="mb-4">Main Conference</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             suscipit, iste quasi atque provident cum ab libero alias inventore
@@ -61,39 +63,48 @@
         </div>
         <!-- </div> -->
       </div>
+      <!-- </div> -->
       <div class="description">
         <h3>A Better Way To Do Business</h3>
         <div class="row">
-          <div class="col">&gt; &#160;&#160; 95-Sq.-Ft. Conference Room</div>
-          <div class="col">&gt; &#160;&#160; Professional Event Planners</div>
-          <div class="col">&gt; &#160;&#160; Audiovisual Equipment</div>
-        </div>
-        <div class="row">
-          <div class="col">&gt; &#160;&#160; Space for 25-80 Guests</div>
-          <div class="col">&gt; &#160;&#160; Customized Catering</div>
-          <div class="col">
-            &gt; &#160;&#160; Business Center with Fax, Copy, Print
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">&gt; &#160;&#160; Complimentary Wi-Fi</div>
-          <div class="col">&gt; &#160;&#160; Free Parking</div>
-          <div class="col">&gt; &#160;&#160; 42 km to Kumasi Airport</div>
-        </div>
-        <div class="row">
-          <div class="col">&gt; &#160;&#160; Free Local Shuttle Service</div>
-          <div class="col">&gt; &#160;&#160; Restaurants & Bars</div>
-          <div class="col">
-            &gt; &#160;&#160; 42 km to Kumasi Sports Stadium
-          </div>
+          <ul class="col">
+            <li>95-Sq.-Ft. Conference Room</li>
+            <li>Professional Event Planners</li>
+            <li>Audiovisual Equipment</li>
+          </ul>
+          <ul class="col">
+            <li>Space for 25-80 Guests</li>
+            <li>Customized Catering</li>
+            <li>
+              Business Center with Fax, Copy, Print
+            </li>
+          </ul>
+          <ul class="col">
+            <li>Complimentary Wi-Fi</li>
+            <li>Free Parking</li>
+            <li>42 km to Kumasi Airport</li>
+          </ul>
+          <ul class="col">
+            <li>Free Local Shuttle Service</li>
+            <li>Restaurants & Bars</li>
+            <li>
+              42 km to Kumasi Sports Stadium
+            </li>
+          </ul>
         </div>
       </div>
       <!-- <div class="card"> -->
-      <div class="row text-and-image" style="margin-bottom: 1rem;">
-        <div class="col">
-          <img src="./assets/images/conference.jpeg" alt="" />
+      <div
+        class="site-block-half d-block d-lg-flex text-and-image"
+        style="margin-bottom: 1em;"
+      >
+        <div
+          class="image d-block bg-image-2 order-2"
+          style="background-image: url(./assets/images/conference.jpeg);"
+        >
+          <!-- <img src="./assets/images/conference.jpeg" alt="" /> -->
         </div>
-        <div class="col">
+        <div class="text order-1">
           <h4>Mini Conference</h4>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet

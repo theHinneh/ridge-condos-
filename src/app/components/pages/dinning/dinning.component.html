@@ -1,0 +1,27 @@
+<!-- @format -->
+
+<div class="dinning-container">
+  <app-cover [backGround]="backGround" [viewHeight]="viewHeight">
+    <div class="container cover-content">
+      <div class="row justify-content-center align-items-center">
+        <div class="col text-center">
+          <h1 class="heading mb-4">Dining</h1>
+          <ul class="ul-decoration mb-4">
+            <li>
+              <a
+                [routerLink]="['/welcome']"
+                routerLinkActive="router-link-active"
+                >HOME</a
+              >
+            </li>
+            <li>&#8226;</li>
+            <li>LEISURE</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </app-cover>
+
+  <app-reservation></app-reservation>
+  <app-footer></app-footer>
+</div>

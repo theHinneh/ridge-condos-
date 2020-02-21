@@ -57,3 +57,14 @@
 .card {
   margin: 3rem 0;
 }
+.extras {
+  position: relative;
+  .table-responsive {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+}

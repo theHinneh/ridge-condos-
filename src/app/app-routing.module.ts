@@ -16,6 +16,7 @@ import { TheFacilitiesComponent } from './components/pages/the-facilities/the-fa
 import { AuthGuardService as AuthGuard } from './components/services/auth-guard.service';
 import { AuthService } from './components/services/auth.service';
 import { LeisureComponent } from './components/pages/leisure/leisure.component';
+import { DinningComponent } from './components/pages/dinning/dinning.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'facilities', component: TheFacilitiesComponent },
   { path: 'reservation', component: ReservationFormComponent },
   { path: 'leisure', component: LeisureComponent },
+  { path: 'dinning', component: DinningComponent },
   {
     path: 'admin/booking',
     component: BookingComponent,

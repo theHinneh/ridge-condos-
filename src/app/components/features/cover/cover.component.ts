@@ -9,6 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CoverComponent implements OnInit {
   @Input() backGround: string;
+  @Input() viewHeight: string;
   constructor() {}
 
   ngOnInit() {}

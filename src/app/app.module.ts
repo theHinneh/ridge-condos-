@@ -31,6 +31,7 @@ import { SliderComponent } from './components/slider/slider.component';
 import { RoomsCorouselComponent } from './components/features/rooms-corousel/rooms-corousel.component';
 import { OffersComponent } from './components/pages/offers/offers.component';
 import { LeisureComponent } from './components/pages/leisure/leisure.component';
+import { DinningComponent } from './components/pages/dinning/dinning.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { LeisureComponent } from './components/pages/leisure/leisure.component';
     ReservationFormComponent,
     RoomsCorouselComponent,
     OffersComponent,
-    LeisureComponent
+    LeisureComponent,
+    DinningComponent
   ],
   imports: [
     AppRoutingModule,

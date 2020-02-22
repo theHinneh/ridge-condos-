@@ -3,7 +3,9 @@
 .rooms-and-suites {
   padding: 5em 0;
   background-color: white;
-
+  * {
+    max-width: 100vw !important;
+  }
   .span-color {
     color: orange;
   }
@@ -31,6 +33,6 @@
       width: 20rem;
     }
     padding: 2rem;
-    margin: .5rem;
+    margin: 0.5rem;
   }
 }

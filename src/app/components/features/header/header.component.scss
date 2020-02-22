@@ -34,7 +34,7 @@ nav {
 }
 .contact-detail {
   background-color: black;
-  padding: 1rem;
+  padding: 0 1rem;
   color: white;
   display: flex;
   flex-direction: row;
@@ -43,6 +43,11 @@ nav {
   align-items: center;
   align-content: center;
   text-align: center;
+  font-size: 13px !important;
+
+  .row {
+    margin: 0 !important;
+  }
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .contact-detail {

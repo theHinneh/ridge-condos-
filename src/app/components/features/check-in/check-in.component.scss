@@ -2,6 +2,11 @@
 .section {
   background-color: #f8f9fa !important;
 }
+.population {
+  position: absolute;
+  bottom: 0;
+  width: 95%;
+}
 .check-in {
   border-radius: 20px;
   width: 80vw;
@@ -24,4 +29,27 @@
     position: relative;
     width: 100%;
   }
+  .population {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
 }
+.form-group {
+  margin: 0 !important;
+  padding: 2rem !important;
+}
+// @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+//   .population {
+//     position: absolute;
+//     bottom: 0;
+//     width: 95%;
+//   }
+// }
+// @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+//   .population {
+//     position: absolute;
+//     bottom: 0;
+//     width: 95%;
+//   }
+// }

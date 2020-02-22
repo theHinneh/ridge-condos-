@@ -4,12 +4,12 @@
   <div class="container">
     <!-- <div class="row availability" id="next"> -->
     <div class="form-styling">
-      <form>
+      <form class="form-group">
         <div class="form-row">
-          <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-            <label for="checkin_date" class="font-weight-bold text-black">
+          <div class="col-md-6 mb-lg-0 col-lg-3">
+            <!-- <label for="checkin_date" class="font-weight-bold text-black">
               Check In
-            </label>
+            </label> -->
             <div class="field-icon-wrap">
               <div class="icon">
                 <span class="icon-calendar"> </span>
@@ -18,7 +18,7 @@
                   #in="ngbDatepicker"
                   type="text"
                   class="form-control"
-                  id="checkin_date"
+                  placeholder="Check In"
                   (click)="in.toggle()"
                 />
               </div>
@@ -26,9 +26,9 @@
           </div>
 
           <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-            <label for="checkout_date" class="font-weight-bold text-black">
+            <!-- <label for="checkout_date" class="font-weight-bold text-black">
               Check Out
-            </label>
+            </label> -->
             <div class="field-icon-wrap">
               <div class="icon">
                 <span class="icon-calendar"> </span>
@@ -37,7 +37,7 @@
                   #out="ngbDatepicker"
                   type="text"
                   class="form-control"
-                  id="checkout_date"
+                  placeholder="Check Out"
                   (click)="out.toggle()"
                 />
               </div>
@@ -45,37 +45,41 @@
           </div>
 
           <div class="col-md-6 mb-3 mb-lg-0 col-lg-3">
-            <div class="row">
-              <div class="col-md-6 mb-3 mb-md-0">
-                <label for="adult" class="font-weight-bold text-black">
-                  Adults
-                </label>
-                <div class="field-icon-wrap">
-                  <div class="icon">
-                    <!-- <span class="ion-ios-arrow-down"></span> -->
-                    <select id="adult" class="form-control">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4+">4+</option>
-                    </select>
+            <div class="population">
+              <div class="row">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <!-- <label for="adult" class="font-weight-bold text-black">
+                    Adults
+                  </label> -->
+                  <div class="field-icon-wrap">
+                    <div class="icon">
+                      <!-- <span class="ion-ios-arrow-down"></span> -->
+                      <select id="adult" class="form-control">
+                        <option selected disabled>Adults</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-              <div class="col-md-6 mb-3 mb-md-0">
-                <label for="children" class="font-weight-bold text-black">
-                  Children
-                </label>
-                <div class="field-icon-wrap">
-                  <div class="icon">
-                    <!-- <span class="ion-ios-arrow-down"> </span> -->
-                    <select id="children" class="form-control">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                      <option value="4+">4+</option>
-                    </select>
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <!-- <label for="children" class="font-weight-bold text-black">
+                    Children
+                  </label> -->
+                  <div class="field-icon-wrap">
+                    <div class="icon">
+                      <!-- <span class="ion-ios-arrow-down"> </span> -->
+                      <select id="children" class="form-control">
+                        <option selected disabled>Children</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
               </div>

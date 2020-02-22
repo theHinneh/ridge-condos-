@@ -1,4 +1,7 @@
+/** @format */
+
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-facilities',
@@ -6,10 +9,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./facilities.component.scss']
 })
 export class ForTheCondosComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
+    AOS.init();
   }
-
 }

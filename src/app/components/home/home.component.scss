@@ -88,7 +88,7 @@
 .mouse-icon {
   width: 25px;
   height: 45px;
-  border: 2px solid white;
+  border: 2px solid black;
   border-radius: 15px;
   cursor: pointer;
   position: relative;
@@ -101,7 +101,7 @@
   margin: 2px auto 0;
   display: block;
   width: 3px;
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   -webkit-animation: 1.6s ease infinite wheel-up-down;
   -moz-animation: 1.6s ease infinite wheel-up-down;
@@ -154,8 +154,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: white;
+  color: black;
   max-width: 100% !important;
   margin-top: -5em;
 }

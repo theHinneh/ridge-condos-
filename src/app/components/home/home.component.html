@@ -2,11 +2,7 @@
 <div class="home-container">
   <!-- <app-header></app-header> -->
   <div class="cover-slider" data-aos="fade-right">
-    <div
-      id="landingPageSlide"
-      class="carousel slide"
-      data-ride="carousel"
-    >
+    <div id="landingPageSlide" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li
           data-target="#landingPageSlide"
@@ -20,7 +16,7 @@
         <li data-target="#landingPageSlide" data-slide-to="5"></li>
         <li data-target="#landingPageSlide" data-slide-to="6"></li>
       </ol>
-      <div class="carousel-inner">
+      <div class="carousel-inner" data-aos="fade">
         <div class="carousel-item active">
           <div class="carousel-caption d-none d-md-block">
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -118,7 +114,7 @@
       <h1>A Best Place To Stay</h1>
     </div>
   </app-cover> -->
-  <div class="app-check-in">
+  <div class="app-check-in" data-aos="fade-up" data-aos-offset="-200">
     <app-check-in></app-check-in>
   </div>
   <!-- Room carousel -->
@@ -130,9 +126,13 @@
     &nbsp; &nbsp; Scroll
   </div>
   <app-facilities></app-facilities>
-  <app-lounge></app-lounge>
+  <app-lounge data-aos="fade-up"></app-lounge>
 
-  <section class="section slider-section bg-light">
+  <section
+    class="section slider-section bg-light"
+    data-aos="fade-up"
+    data-aos-duration="1000"
+  >
     <div class="container">
       <div class="row justify-content-center text-center mb-5">
         <div class="col-md-7">

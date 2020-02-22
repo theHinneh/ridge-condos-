@@ -3,18 +3,14 @@
   position: relative;
 }
 .image-and-text {
-  border: 1px solid grey;
-  border-bottom: none;
   padding: 1em;
 }
 .text-and-image {
-  padding: 1em;
-  border: 1px solid grey;
   border-top: none;
 }
 
 .description {
-  padding: 5rem 0;
+  padding: 5rem 1em;
   h3 {
     font-weight: 900;
   }

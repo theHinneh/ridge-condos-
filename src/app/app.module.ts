@@ -17,10 +17,15 @@ import { CoverComponent } from './components/features/cover/cover.component';
 import { FooterComponent } from './components/features/footer/footer.component';
 import { HeaderComponent } from './components/features/header/header.component';
 import { ModalModule } from './components/features/modal/modal.module';
+import { RoomsCorouselComponent } from './components/features/rooms-corousel/rooms-corousel.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoungeComponent } from './components/lounge/lounge.component';
 import { AboutUsComponent } from './components/pages/about-us/about-us.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { DinningComponent } from './components/pages/dinning/dinning.component';
+import { GoogleMapComponent } from './components/pages/google-map/google-map.component';
+import { LeisureComponent } from './components/pages/leisure/leisure.component';
+import { OffersComponent } from './components/pages/offers/offers.component';
 import { ReservationFormComponent } from './components/pages/reservation-form/reservation-form.component';
 import { RoomsComponent } from './components/pages/rooms/rooms.component';
 import { TheFacilitiesComponent } from './components/pages/the-facilities/the-facilities.component';
@@ -28,12 +33,6 @@ import { ReservationComponent } from './components/reservation/reservation.compo
 import { AuthGuardService } from './components/services/auth-guard.service';
 import { AuthService } from './components/services/auth.service';
 import { SliderComponent } from './components/slider/slider.component';
-import { RoomsCorouselComponent } from './components/features/rooms-corousel/rooms-corousel.component';
-import { OffersComponent } from './components/pages/offers/offers.component';
-import { LeisureComponent } from './components/pages/leisure/leisure.component';
-import { DinningComponent } from './components/pages/dinning/dinning.component';
-import { GoogleMapsModule } from '@angular/google-maps';
-import { GoogleMapComponent } from './components/pages/google-map/google-map.component';
 
 @NgModule({
   declarations: [
@@ -69,7 +68,7 @@ import { GoogleMapComponent } from './components/pages/google-map/google-map.com
     BrowserModule,
     BrowserAnimationsModule,
     NgbModule,
-    GoogleMapsModule
+
   ],
   providers: [AuthGuardService, AuthService],
   bootstrap: [AppComponent]

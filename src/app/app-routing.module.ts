@@ -9,15 +9,14 @@ import { LogoutComponent } from './components/admin/logout/logout.component';
 import { AdminRoomsComponent } from './components/admin/rooms/rooms/rooms.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/pages/contact/contact.component';
+import { DinningComponent } from './components/pages/dinning/dinning.component';
+import { LeisureComponent } from './components/pages/leisure/leisure.component';
 import { OffersComponent } from './components/pages/offers/offers.component';
 import { ReservationFormComponent } from './components/pages/reservation-form/reservation-form.component';
 import { RoomsComponent } from './components/pages/rooms/rooms.component';
 import { TheFacilitiesComponent } from './components/pages/the-facilities/the-facilities.component';
 import { AuthGuardService as AuthGuard } from './components/services/auth-guard.service';
 import { AuthService } from './components/services/auth.service';
-import { LeisureComponent } from './components/pages/leisure/leisure.component';
-import { DinningComponent } from './components/pages/dinning/dinning.component';
-import { GoogleMapComponent } from './components/pages/google-map/google-map.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,7 +27,7 @@ const routes: Routes = [
   { path: 'reservation', component: ReservationFormComponent },
   { path: 'leisure', component: LeisureComponent },
   { path: 'dinning', component: DinningComponent },
-  { path: 'location', component: GoogleMapComponent },
+  // { path: 'location', component: GoogleMapComponent },
   {
     path: 'admin/booking',
     component: BookingComponent,

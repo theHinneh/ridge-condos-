@@ -67,8 +67,7 @@ import { SliderComponent } from './components/slider/slider.component';
     RouterModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NgbModule,
-
+    NgbModule
   ],
   providers: [AuthGuardService, AuthService],
   bootstrap: [AppComponent]

@@ -32,6 +32,8 @@ import { RoomsCorouselComponent } from './components/features/rooms-corousel/roo
 import { OffersComponent } from './components/pages/offers/offers.component';
 import { LeisureComponent } from './components/pages/leisure/leisure.component';
 import { DinningComponent } from './components/pages/dinning/dinning.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { GoogleMapComponent } from './components/pages/google-map/google-map.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +55,8 @@ import { DinningComponent } from './components/pages/dinning/dinning.component';
     RoomsCorouselComponent,
     OffersComponent,
     LeisureComponent,
-    DinningComponent
+    DinningComponent,
+    GoogleMapComponent
   ],
   imports: [
     AppRoutingModule,
@@ -65,7 +68,8 @@ import { DinningComponent } from './components/pages/dinning/dinning.component';
     RouterModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    GoogleMapsModule
   ],
   providers: [AuthGuardService, AuthService],
   bootstrap: [AppComponent]

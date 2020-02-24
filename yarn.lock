@@ -229,6 +229,14 @@
   dependencies:
     tslib "^1.9.0"
 
+"@angular/google-maps@^9.0.1":
+  version "9.0.1"
+  resolved "https://registry.yarnpkg.com/@angular/google-maps/-/google-maps-9.0.1.tgz#a66c1d68e690c14ec63a2341f1ebc6eec116de6e"
+  integrity sha512-lEAIq/R6Wq4vC6t41noWh+TnhWZqgDm3cz0wgLxc66VbvaIBfNQXtsbWBTHjR+CShacpdJHCVtOS7filDH0mhA==
+  dependencies:
+    "@types/googlemaps" "^3.37.0"
+    tslib "^1.9.0"
+
 "@angular/http@5.2.9":
   version "5.2.9"
   resolved "https://registry.yarnpkg.com/@angular/http/-/http-5.2.9.tgz#2ffea536e181bc97e2867593d57425ea7853285b"
@@ -1152,6 +1160,11 @@
     "@types/events" "*"
     "@types/minimatch" "*"
     "@types/node" "*"
+
+"@types/googlemaps@^3.37.0":
+  version "3.39.3"
+  resolved "https://registry.yarnpkg.com/@types/googlemaps/-/googlemaps-3.39.3.tgz#8664e424f335802c8aa46a94676666b0a0f31d97"
+  integrity sha512-L8O9HAVFZj0TuiS8h5ORthiMsrrhjxTC8XUusp5k47oXCst4VTm+qWKvrAvmYMybZVokbp4Udco1mNwJrTNZPQ==
 
 "@types/jasmine@*":
   version "3.5.4"
@@ -4330,6 +4343,11 @@ inquirer@6.5.1:
     string-width "^4.1.0"
     strip-ansi "^5.1.0"
     through "^2.3.6"
+
+install@^0.13.0:
+  version "0.13.0"
+  resolved "https://registry.yarnpkg.com/install/-/install-0.13.0.tgz#6af6e9da9dd0987de2ab420f78e60d9c17260776"
+  integrity sha512-zDml/jzr2PKU9I8J/xyZBQn8rPCAY//UOYNmR01XwNwyfhEWObo2SWfSl1+0tm1u6PhxLwDnfsT/6jB7OUxqFA==
 
 internal-ip@^4.3.0:
   version "4.3.0"

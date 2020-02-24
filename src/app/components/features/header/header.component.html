@@ -1,6 +1,9 @@
 <!-- @format -->
 <div class="contact-detail">
-  <div class="location">Ahodwo, Kumasi</div>
+  <div class="location">
+    <a [routerLink]="['/location']">Ahodwo, Kumasi</a>
+  </div>
+
   <div class="media row" style="justify-content: center;">
     <div style="display: inline-flex;">
       <span
@@ -17,20 +20,27 @@
       &nbsp;
       <span><p>reserve@ridgecondos.com.gh</p></span>
       &nbsp;
-      <span style=" vertical-align: middle;">
-        <i class="lni-facebook-filled"></i>
-      </span>
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <span style=" vertical-align: middle;">
+          <i class="lni-facebook-filled"></i>
+        </span>
+      </a>
       &nbsp;
-      <span style=" vertical-align: middle;">
-        <i class="lni-instagram-filled"></i>
-      </span>
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <span style=" vertical-align: middle;">
+          <i class="lni-instagram-filled"></i>
+        </span>
+      </a>
       &nbsp;
-      <span style=" vertical-align: middle;">
-        <i class="lni-twitter-original"></i>
-      </span>
+      <a href="http://" target="_blank" rel="noopener noreferrer">
+        <span style=" vertical-align: middle;">
+          <i class="lni-twitter-original"></i>
+        </span>
+      </a>
     </div>
   </div>
 </div>
+
 <nav
   class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
   id="mainNav"
@@ -41,7 +51,7 @@
     [routerLink]="['']"
     routerLinkActive="router-link-active"
   >
-    <img src="./assets/images/logo.jpg" alt="" height="70" width="150" />
+    <img src="./assets/images/logo.jpg" alt="" height="80" width="150" />
   </a>
   <button
     class="navbar-toggler"

@@ -1,0 +1,16 @@
+<!-- @format -->
+
+<google-map
+  height="80vh"
+  width="100vw"
+  [zoom]="zoom"
+  [center]="center"
+  [options]="options"
+  ><map-marker
+    [position]="marker.position"
+    [label]="marker.label"
+    [title]="marker.title"
+    [options]="marker.options"
+  >
+  </map-marker>
+</google-map>

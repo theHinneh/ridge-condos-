@@ -4,6 +4,7 @@
 //     max-width: 100vw !important;
 //   }
 // }
+
 .home-container {
   background-color: white;
 }
@@ -53,13 +54,13 @@
   }
 }
 .slider-section {
-  padding: 5rem 0;
+  padding: 2rem 0;
 }
 .cover-slider {
   background-color: white;
   max-width: 100vw !important;
   img {
-    height: 78vh !important;
+    height: 77vh !important;
   }
 }
 .carousel-item:before {
@@ -160,5 +161,5 @@
   background-color: white;
   color: black;
   max-width: 100% !important;
-  margin-top: -5em;
+  margin-top: -2em;
 }

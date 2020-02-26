@@ -63,15 +63,7 @@
     height: 77vh !important;
   }
 }
-.carousel-item:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: '';
-  background: rgba(0, 0, 0, 0.5);
-}
+
 .carousel-caption {
   padding: 0 0 30vh 0;
   font-size: 30px;

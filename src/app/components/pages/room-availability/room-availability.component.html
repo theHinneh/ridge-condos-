@@ -1,0 +1,42 @@
+<!-- @format -->
+
+<div class="room-available">
+  <div class="container">
+    <div *ngIf="loader" class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+
+    <h2 *ngIf="error" style="color: red; text-align: center;">
+      {{ errorMessage }}
+    </h2>
+
+    <h2 *ngIf="noRooms" style="color: red; text-align: center;">
+      {{ errorMessage }}
+    </h2>
+
+    <div *ngIf="!loader">
+      <div class="card" style="width: 18rem;" *ngFor="let resp of response">
+        <div class="card-body" *ngIf="resp.status === 'AVAILABLE'">
+          <h3 class="card-title">{{ resp.category }}</h3>
+          <p class="card-text" style="text-align: center;">
+            {{ resp.description }}
+          </p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Children: {{ resp.children }}</li>
+            <li class="list-group-item">Adult: {{ resp.adult }}</li>
+            <li class="list-group-item">Price: GHS{{ resp.price }}</li>
+          </ul>
+          <!-- <a href="#" class="card-link">Card link</a> -->
+          <a
+            [routerLink]="['/reservation']"
+            class="card-link"
+            style="float: right !important; color: orange;"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <app-reservation></app-reservation>
+  <app-footer></app-footer>
+</div>

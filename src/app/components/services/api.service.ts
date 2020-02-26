@@ -23,13 +23,19 @@ export class ApiService {
       'Access-Control-Allow-Headers',
       'Origin, X-Requested-With, Content-Type, Accept, Authorization,'
     )
-    .set('Authorization', 'Bearer ' + this.storageService.getStorage());
+    .set(
+      'Authorization',
+      'Bearer ' + this.storageService.getStorage().slice(1, -1)
+    );
 
   private readonly options = {
     headers: this.httpHeaders
   };
 
   login(data: any) {
-    return this.http.post(this.baseUrl + 'auth/signin', data);
+    return this.http.post(`${this.baseUrl}auth/signin`, data);
+  }
+  getRooms() {
+    return this.http.get(`${this.baseUrl}rooms-management`, this.options);
   }
 }

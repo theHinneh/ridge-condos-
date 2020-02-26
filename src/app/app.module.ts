@@ -10,7 +10,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AdminModule } from './components/admin/admin.module';
 import { ForTheCondosComponent } from './components/facilities/facilities.component';
 import { CheckInComponent } from './components/features/check-in/check-in.component';
 import { CoverComponent } from './components/features/cover/cover.component';
@@ -27,12 +26,14 @@ import { GoogleMapComponent } from './components/pages/google-map/google-map.com
 import { LeisureComponent } from './components/pages/leisure/leisure.component';
 import { OffersComponent } from './components/pages/offers/offers.component';
 import { ReservationFormComponent } from './components/pages/reservation-form/reservation-form.component';
+import { RoomAvailabilityComponent } from './components/pages/room-availability/room-availability.component';
 import { RoomsComponent } from './components/pages/rooms/rooms.component';
 import { TheFacilitiesComponent } from './components/pages/the-facilities/the-facilities.component';
 import { ReservationComponent } from './components/reservation/reservation.component';
 import { AuthGuardService } from './components/services/auth-guard.service';
 import { AuthService } from './components/services/auth.service';
 import { SliderComponent } from './components/slider/slider.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -55,19 +56,20 @@ import { SliderComponent } from './components/slider/slider.component';
     OffersComponent,
     LeisureComponent,
     DinningComponent,
-    GoogleMapComponent
+    GoogleMapComponent,
+    RoomAvailabilityComponent
   ],
   imports: [
     AppRoutingModule,
     FormsModule,
     FontAwesomeModule,
-    AdminModule,
     ModalModule,
     CommonModule,
     RouterModule,
     BrowserModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule
   ],
   providers: [AuthGuardService, AuthService],
   bootstrap: [AppComponent]

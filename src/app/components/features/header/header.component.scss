@@ -1,10 +1,17 @@
 /** @format */
 nav {
   max-width: 100vw !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  a {
+    color: white !important;
+  }
 }
 .navbar-brand {
   font-size: 2rem !important;
   padding-left: 10rem;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .router-link-active.router-link-active.router-link-active {
@@ -36,7 +43,8 @@ nav {
 }
 .contact-detail {
   background-color: white;
-  padding: 0 12rem;
+  padding: 0 11rem;
+  padding-right: 12.5rem;
   color: black !important;
   display: flex;
   flex-direction: row;

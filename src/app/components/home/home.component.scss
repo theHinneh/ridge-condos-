@@ -155,3 +155,8 @@
   max-width: 100% !important;
   margin-top: -2em;
 }
+.resize-to-fit {
+  img {
+    object-fit: cover !important;
+  }
+}

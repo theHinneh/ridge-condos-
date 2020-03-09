@@ -14,8 +14,8 @@
       {{ errorMessage }}
     </h2>
 
-    <div *ngIf="!loader">
-      <div class="card" style="width: 18rem;" *ngFor="let resp of response">
+    <div *ngIf="!loader" class="row">
+      <div class="card mb-3 mr-3" style="width: 18rem;" *ngFor="let resp of response">
         <div class="card-body" *ngIf="resp.status === 'AVAILABLE'">
           <h3 class="card-title">{{ resp.category }}</h3>
           <p class="card-text" style="text-align: center;">

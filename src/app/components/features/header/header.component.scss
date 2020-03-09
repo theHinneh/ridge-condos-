@@ -35,9 +35,9 @@ nav {
   }
 }
 .contact-detail {
-  background-color: black;
+  background-color: white;
   padding: 0 12rem;
-  color: white;
+  color: black !important;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -47,6 +47,10 @@ nav {
   text-align: center;
   font-size: 13px !important;
 
+  a {
+    color: black !important;
+  }
+
   .row {
     margin: 0 !important;
     padding: 10px 0 0 0;
@@ -54,9 +58,9 @@ nav {
 }
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
   .contact-detail {
-    background-color: black;
+    background-color: white;
     padding: 1rem;
-    color: white;
+    color: black !important;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -67,9 +71,9 @@ nav {
 }
 @media only screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .contact-detail {
-    background-color: black;
+    background-color: white;
     padding: 1rem;
-    color: white;
+    color: black !important;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;

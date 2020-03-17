@@ -1,18 +1,18 @@
 /** @format */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 import {
   faWifi,
   faBus,
   faWheelchair,
   faSwimmingPool,
   faDumbbell
-} from '@fortawesome/free-solid-svg-icons';
+} from "@fortawesome/free-solid-svg-icons";
 
 @Component({
-  selector: 'app-leisure',
-  templateUrl: './leisure.component.html',
-  styleUrls: ['./leisure.component.scss']
+  selector: "app-leisure",
+  templateUrl: "./leisure.component.html",
+  styleUrls: ["./leisure.component.scss"]
 })
 export class LeisureComponent implements OnInit {
   faWifi = faWifi;
@@ -20,8 +20,10 @@ export class LeisureComponent implements OnInit {
   faWheelchair = faWheelchair;
   faSwimmingPool = faSwimmingPool;
   faDumbbell = faDumbbell;
-  backGround = 'url(/assets/images/about.jpeg)';
+  backGround = "url(/assets/images/about.jpeg)";
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }

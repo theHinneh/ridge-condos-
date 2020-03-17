@@ -1,12 +1,12 @@
 /** @format */
 
-import { Component, OnInit } from '@angular/core';
-import { ApiService } from '../../services/api.service';
+import { Component, OnInit } from "@angular/core";
+import { ApiService } from "../../services/api.service";
 
 @Component({
-  selector: 'app-room-availability',
-  templateUrl: './room-availability.component.html',
-  styleUrls: ['./room-availability.component.scss']
+  selector: "app-room-availability",
+  templateUrl: "./room-availability.component.html",
+  styleUrls: ["./room-availability.component.scss"]
 })
 export class RoomAvailabilityComponent implements OnInit {
   response: any;
@@ -19,6 +19,7 @@ export class RoomAvailabilityComponent implements OnInit {
   constructor(private readonly apiService: ApiService) {}
 
   ngOnInit() {
+    window.scrollTo(0, 0);
     this.loader = true;
     this.error = false;
     this.apiService.getRooms().subscribe(
@@ -26,7 +27,7 @@ export class RoomAvailabilityComponent implements OnInit {
         this.response = res;
         if (this.response.length === 0) {
           this.loader = false;
-          this.errorMessage = 'Sorry, no rooms available';
+          this.errorMessage = "Sorry, no rooms available";
           this.noRooms = true;
         }
         this.loader = false;
@@ -34,7 +35,7 @@ export class RoomAvailabilityComponent implements OnInit {
         // console.log(this.response);
       },
       error => {
-        this.errorMessage = 'Sorry, no rooms available';
+        this.errorMessage = "Sorry, no rooms available";
         this.error = true;
         this.loader = false;
       }

@@ -1,14 +1,16 @@
 /** @format */
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-google-map',
-  templateUrl: './google-map.component.html',
-  styleUrls: ['./google-map.component.scss']
+  selector: "app-google-map",
+  templateUrl: "./google-map.component.html",
+  styleUrls: ["./google-map.component.scss"]
 })
 export class GoogleMapComponent implements OnInit {
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    window.scrollTo(0, 0);
+  }
 }
